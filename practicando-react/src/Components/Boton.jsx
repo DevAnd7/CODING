@@ -5,7 +5,7 @@ const clicar =()=>{
 }
 
     return (
-        <button onClick={clicar}>Boton {letra}</button>
+        <button className="btn btn-light" onClick={clicar}>Boton {letra}</button>
     );
 };
 
