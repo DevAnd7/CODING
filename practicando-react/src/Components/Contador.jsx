@@ -1,20 +1,21 @@
 import { useState } from "react";
 
-const Contador = () => {
+const Contador = ({valorInicial}) => {
 
-    const [contar, setContar] = useState(0)
+    const [contar, setContar] = useState(valorInicial)
 
     const sumar = () => {
         setContar(contar + 1)
     }
 
     const restar = () => {
-        setContar(contar - 1)
+        setContar(contar > 0 ? contar - 1 : 0)
     }
 
     return (
-        <div>
-            <h1>Contando vamos por...{contar}</h1>
+        <div className="d-flex gap-2">
+            <h1>Contando por...{contar}</h1>
+
             <button className="btn btn-light"
                 onClick={sumar}
             >Sumar
@@ -25,7 +26,7 @@ const Contador = () => {
             </button>
 
             <button className="btn btn-light"
-                onClick={() => setContar(0)}>Reset
+                onClick={() => setContar(valorInicial)}>Reset
             </button>
         </div>
     )
