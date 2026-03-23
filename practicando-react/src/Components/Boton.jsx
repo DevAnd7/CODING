@@ -1,11 +1,11 @@
-const Boton = () => {
+const Boton = ({letra, mensaje}) => {
 
 const clicar =()=>{
-    console.log('Boton Clicado')
+    console.log(mensaje)
 }
 
     return (
-        <button onClick={clicar}>Dale Click</button>
+        <button onClick={clicar}>Boton {letra}</button>
     );
 };
 

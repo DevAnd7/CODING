@@ -6,7 +6,8 @@ const App = () => {
       <h1>
         Practicando React
       </h1>
-      <Boton />
+      <Boton letra= 'A' mensaje='Oprimiste el Boton A'/>
+      <Boton letra= 'B' mensaje='Oprimiste el Boton B'/>
     </div>
   );
 };
