@@ -21,11 +21,12 @@ const Contador = () => {
             </button>
 
             <button className="btn btn-light"
-                onClick={restar}
-            >Restar
+                onClick={restar}>Restar
             </button>
 
-            <button onClick={() => setContar(0)}>Reset</button>
+            <button className="btn btn-light"
+                onClick={() => setContar(0)}>Reset
+            </button>
         </div>
     )
 }
